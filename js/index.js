@@ -15,7 +15,7 @@ function getUrlParam() {
 //获取up排名
 function getUserRankList(index,orderby,state) {
     $('body').animate({scrollTop: 0},100);
-    $('.rank-list tbody').html('<tr><td colspan="5"><span class="loading-list"></span></td></tr>');
+    $('.rank-list tbody').html('<tr><td colspan="6"><span class="loading-list"></span></td></tr>');
     if(!window.userList){
         $.get('/data/bilibili_users.json',function (res) {
             window.userList = res.RECORDS;
