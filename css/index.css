@@ -4,7 +4,7 @@
 .toolbar-item.right{float: right;}
 .toolbar-item .title{line-height: 38px;color: #333;margin-right: 5px;}
 .loading-list{background: url(/img/loading.gif);width: 32px;height: 32px;margin:20px auto;display: block;position: relative}
-.loading-list{content: '首次加载数据中，请耐心等待'; position: absolute; width: 205px; left: -73px; bottom: -24px;}
+.loading-list:after{content: '首次加载数据中，请耐心等待'; position: absolute; width: 205px; left: -73px; bottom: -24px;}
 .rank-list{background: #fff;margin-top: 20px;}
 .table .avatar{width: 40px;margin-right: 5px;}
 .table tbody tr td {vertical-align: middle;cursor: pointer;}
