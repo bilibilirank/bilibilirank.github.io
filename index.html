@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="bilibili,bilibilirank,b站,b站数据分析">
+    <meta name="desciption" content="对b站数据进行分析，列出视频和up主的排行数据">
+    <title>up主排行-BilibiliRank</title>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootswatch/3.3.7/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/tz-ui.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">BilibiliRank</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">up主排行</a></li>
+            </ul>
+            <p class="navbar-text navbar-right">一个B站的数据分析网站</p>
+        </div>
+    </div>
+</nav>
+<div class="outer">
+    <div class="toolbar-box">
+        <div class="toolbar-item">
+            <span class="title">排序</span>
+            <select class="tz-select" id="orderBy">
+                <option value="fans_desc">粉丝数量降序</option>
+                <option value="fans_asc">粉丝数量升序</option>
+                <option value="playNum_desc">播放数量降序</option>
+                <option value="playNum_asc">播放数量升序</option>
+                <option value="regtime_desc">注册时间降序</option>
+                <option value="regtime_asc">注册时间升序</option>
+            </select>
+        </div>
+        <div class="toolbar-item right"></div>
+    </div>
+    <table class="rank-list table table-hover">
+        <thead>
+        <tr>
+            <td>排名</td>
+            <td class="user">用户</td>
+            <td>粉丝数量</td>
+            <td>总播放数量</td>
+            <td>注册时间</td>
+            <td>更新时间</td>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="text-center">
+        <ul id="pagination"></ul>
+    </div>
+    <div class="footer">
+        1、目前暂不记录粉丝数小于500的UP主。
+        <br>2、由于b站对ip访问做了请求限制，所以要全量跑完所有用户数据，需要大量的时间，请耐心等待。
+        <br>3、数据每周五更新。
+        <br>4、如果你对本站有什么意见或建议，欢迎发送邮件到wndwl@qq.com。
+    </div>
+</div>
+<script src="//cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/js/jquery.twbsPagination.min.js"></script>
+<script src="/js/cnzz.js"></script>
+<script src="/js/tz-ui.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>

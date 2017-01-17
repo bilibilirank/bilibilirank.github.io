@@ -1,0 +1,10 @@
+.outer{max-width: 960px;width: 100%;margin: 0 auto;}
+.toolbar-box{display: inline-block; width: 100%; box-shadow: 0 1px #dcdcdc, 0 2px #fff; padding: 5px 0;}
+.toolbar-item{float: left}
+.toolbar-item.right{float: right;}
+.toolbar-item .title{line-height: 38px;color: #333;margin-right: 5px;}
+.loading-list{background: url(/img/loading.gif);width: 32px;height: 32px;margin:20px auto;display: block;}
+.rank-list{background: #fff;margin-top: 20px;}
+.table .avatar{width: 40px;margin-right: 5px;}
+.table tbody tr td {vertical-align: middle;cursor: pointer;}
+td[colspan]{cursor: default !important;width: 100%;}

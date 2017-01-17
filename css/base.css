@@ -1,0 +1,17 @@
+html,body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,i{margin:0;padding:0;}
+img{border:0 none;}
+img { vertical-align:middle}
+ul,ol{ list-style:none}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+body{background-image: url('/img/body.jpg')}
+body,input{ -webkit-text-size-adjust:none;line-height:1.5; font:normal 14px 'Microsoft YaHei','\5B8B\4F53',Arial,sans-serif;outline:none;}
+a { text-decoration:none; color:#333}
+a:hover,a:focus{text-decoration: none;color:#333;}
+a:focus{outline:0;}
+textarea{resize: none}
+li{list-style: none}
+i{display: inline-block;font-style: normal}
+strong{font-weight: normal;}
+.footer{line-height: 24px; color: #333;}
+
+[id*="cnzz_stat_icon_"]{position: absolute; width: 20px; height: 21px; margin: auto; left: 0; right: 0; margin-top: -26px;}

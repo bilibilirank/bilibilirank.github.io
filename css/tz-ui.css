@@ -1,0 +1,286 @@
+/*Button start*/
+.tz-btn{
+    text-decoration: none;
+    color: #fff;
+    background: #00a5e0;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all .2s ease;
+    box-shadow: 1px 1px 1px #ccc,1px 1px #ccc;
+    display: inline-block;
+}
+.tz-btn{
+    padding: 7px 15px;
+}
+.tz-btn:focus,.tz-btn:hover,.tz-btn.active{
+    outline: none;
+    background: #00bcff;
+}
+.tz-btn.tz-btn-success{
+    background: #4caf50;
+}
+.tz-btn.tz-btn-success:hover{
+    background: #5dd061;
+}
+.tz-btn.tz-btn-danger{
+    background: #f44336;
+}
+.tz-btn.tz-btn-danger:hover{
+    background: #ff665a;
+}
+/*Button end*/
+/*Select start*/
+.tz-select{
+    display: none;
+}
+.tz-select-box{
+    line-height: 38px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 4px;
+    height: 38px;
+    font-size: 14px;
+    position: relative;
+    background: #fff;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.tz-select-box:after{
+    content: '›';
+    position: absolute;
+    right: 8px;
+    top: 0;
+    font-size: 26px;
+    transform: rotate(90deg);
+    color: #00a5e0;
+}
+.tz-select-choice{
+    margin: 0 40px 0 10px;
+}
+.tz-select-list{
+    border: 1px solid transparent;
+    border-top: none;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    left: -1px;
+    position: relative;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-sizing: content-box;
+    top:-1px;
+    opacity: 0;
+}
+.tz-select-item{
+    padding: 0 40px 0 10px;
+}
+.tz-select-item:hover,.tz-select-item.active{
+    background: #00a5e0;
+    color: #fff;
+}
+.tz-select-box[data-open]{
+    border-color:#00a5e0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tz-select-box[data-open] .tz-select-list{
+    height: auto;
+    border-color:#00a5e0;
+    opacity: 1;
+}
+/*Select end*/
+/*File start*/
+.tz-file{
+    display: none;
+}
+.tz-file-box{
+    margin: 5px 0;
+}
+.tz-file-path{
+    font-size: 12px;
+    vertical-align: bottom;
+    margin-left:5px;
+    color: #555;
+}
+/*File end*/
+/*Radio start*/
+.tz-radio input{
+    display: none;
+}
+.tz-radio-item{
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    margin:0 8px 0 0;
+}
+.tz-radio-icon{
+    border:1px solid #bbb;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    background: #fff;
+}
+.tz-radio-icon:after{
+    content: '';
+    position: absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom:0;
+    background: #00a5e0;
+    border-radius: 50% 50%;
+    width: 60%;
+    height: 60%;
+    transform: scale(0,0);
+    margin: auto;
+    transition: transform .2s ease;
+}
+.tz-radio input:checked + .tz-radio-icon:after{
+    transform: scale(1,1);
+    display: block;
+}
+.tz-radio-text{
+    vertical-align: middle;
+}
+/*Radio end*/
+/*Checkbox start*/
+.tz-checkbox{
+    display: inline-block;
+}
+.tz-checkbox input{
+    display: none;
+}
+.tz-checkbox-item{
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    margin:0 8px 0 0;
+}
+.tz-checkbox-icon{
+    border:1px solid #bbb;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    background: #fff;
+}
+.tz-checkbox-icon:after{
+    content: '✓';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    font-size: 15px;
+    text-align: center;
+    background: #00a5e0;
+    color: #fff;
+}
+.tz-checkbox input:checked + .tz-checkbox-icon{
+    border-color:#00a5e0;
+}
+.tz-checkbox input:checked + .tz-checkbox-icon:after{
+    display: block;
+}
+.tz-checkbox-text{
+    vertical-align: middle;
+}
+/*Checkbox end*/
+/*Toggle Button start*/
+.tz-toggle-btn{
+    display: inline-block;
+    height: 29px;
+    width: 50px;
+    background: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all .2s ease;
+}
+.tz-toggle-btn:after{
+    content: '';
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left : 2px;
+    margin: auto;
+    transition: all .2s ease;
+}
+.tz-toggle-btn.active{
+    background: #00a5e0;
+}
+.tz-toggle-btn.active:after{
+    left :23px;
+}
+/*Toggle Button end*/
+/*Title start*/
+.tz-title{
+    font-size: 12px;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.tz-title:after{
+    content: '';
+    border: 5px solid #000;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: auto;
+}
+/*Title end*/
+/*Text start*/
+.tz-input-text{
+    line-height: 38px;
+    min-width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0 5px;
+    font-size: 14px;
+    outline: none;
+    transition: all .2s ease;
+}
+.tz-input-text:focus{
+    border-color:#00a5e0;
+}
+/*Text end*/
+/*Link start*/
+.tz-link{
+    text-decoration: none;
+    color:#00a5e0;
+    transition: all .2s ease;
+    display: inline-block;
+}
+.tz-link:hover,.tz-link:focus{
+    text-decoration: underline;
+    color: #00bcff;
+}
+/*Link end*/
